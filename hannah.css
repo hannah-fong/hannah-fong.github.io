@@ -20,13 +20,12 @@ nav ul {
   margin: 0;
   padding: 0;
   text-align:center;
-  font-family: 'Questrial', sans-serif;
-  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
 nav li {
   display: inline;
-  color: white;
 }
 
 nav li a {
@@ -36,7 +35,6 @@ nav li a {
   margin-top: 2.5%;
   margin-bottom: 1%;
   padding: 8px;
-  color: white;
 }
 
 #navbarname {
@@ -260,6 +258,7 @@ hr {
 footer {
   text-align: center;
   font-family: 'Lato', sans-serif;
+  font-weight: 300;
   padding: 2%;
   background-color: #bca3ac;
 
