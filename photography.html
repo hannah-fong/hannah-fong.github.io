@@ -1,0 +1,180 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Euphoria+Script|Muli" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="hannah.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $(".navbar a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+
+    //email popover
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();
+    });
+
+    $(document).ready(function(){
+      var scroll_start = 0;
+      var startchange = $('#photography');
+      var offset = startchange.offset();
+      $(document).scroll(function() {
+        scroll_start = $(this).scrollTop();
+        if(scroll_start > offset.top) {
+          $('#navbartop').css('background-color', 'rgba(188, 163, 172,0.35)');
+          $('#navbartop').css('color', '#474350');
+        } else {
+            $('#navbartop').css('background-color', '#bca3ac');
+            $('#navbartop').css('color', 'white');
+            $('.navbar-fixed-top').css('box-shadow', '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);');
+          }
+       });
+    });
+  </script>
+  <title>Hannah Fong</title>
+</head>
+
+<body>
+  <nav class="navbar navbar navbar-fixed-top" id="navbartop">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6" id="navbarname">HANNAH FONG</div>
+        <div class="col-lg-6">
+          <div class="container-fluid" id="navbarlinks">
+            <ul>
+              <li><a href="hannah.html" id="navlink">HOME</a></li>
+              <li><a href="about.html" id="navlink">ABOUT</a></li>
+              <li><a href="experience.html" id="navlink">EXPERIENCE</a></li>
+              <li><a href="#photography" id="navlink">PHOTOGRAPHY</a></li>
+              <li><a href="calligraphy.html"id="navlink">CALLIGRAPHY</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="photography" class="photography"><div id="photographytext">
+    <h1 class="pagetitle"><center><b>Photography</b></center></h1>
+    <br>
+    <h4>From a young age, I loved taking pictures at any given moment.  I loved
+      how I could capture a moment in time, then look back at that moment
+      as many times as I would like.  The first camera I ever bought was a sea green
+      Nikon Coolpix point-and-shoot camera back in 2007.  I received my DSLR in
+      high school and I've been excited to use it every possible chance since.
+      More recently, my focus is outdoor portraits, but I still love to shoot
+      nature and street life.</h4>
+    <br>
+      <h4>Please enjoy a few of my photographs, and check out my
+        <a href="https://hannahfong.wixsite.com/photo" target="_blank" id="linklink">website</a>!
+      </h4>
+    <br>
+    <div class="myCarousel">
+      <br>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="images_photog\IMG_7117.jpg" alt="IMG1" id="img">
+          </div>
+          <div class="item">
+            <img src="images_photog\IMG_7004.jpg" alt="IMG2" id="img">
+          </div>
+          <div class="item">
+            <img src="images_photog\IMG_7299.jpg" alt="IMG3" id="img">
+          </div>
+          <div class="item">
+            <img src="images_photog\IMG_0838.jpg" alt="IMG4" id="img">
+          </div>
+          <div class="item">
+            <img src="images_photog\IMG_0896.jpg" alt="IMG5" id="img">
+          </div>
+          <div class="item">
+            <img src="images_photog\IMG_7042.jpg" alt="IMG6" id="img">
+          </div>
+          <div class="item">
+            <img src="images_photog\IMG_9279.jpg" alt="IMG7" id="img">
+          </div>
+          <div class="item">
+            <img src="images_photog\IMG_8059.jpg" alt="IMG8" id="img">
+          </div>
+          <div class="item">
+            <img src="images_photog\IMG_8261.jpg" alt="IMG9" id="img">
+          </div>
+          <div class="item">
+            <img src="images_photog\IMG_8680.jpg" alt="IMG10" id="img">
+          </div>
+          <div class="item">
+            <img src="images_photog\IMG_8749.jpg" alt="IMG11" id="img">
+          </div>
+          <!--left/right controls-->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <br>
+
+
+    </div>
+    <br><br>
+    <center>
+    <h4>Please click on the links below to see more!</h4>
+    <div class="buttons">
+      <a href="http://www.hannahfong.wixsite.com/photo/portraits" class="btn btn-info" role="button" id="buttonlink">Portraits</a>
+      <a href="http://www.hannahfong.wixsite.com/photo/graduation-photos" class="btn btn-info" role="button" id="buttonlink">Graduation</a>
+      <a href="http://www.hannahfong.wixsite.com/photo/nature-landscapes" class="btn btn-info" role="button" id="buttonlink">Landscapes/Nature</a>
+      <a href="http://www.hannahfong.wixsite.com/photo/miscellaneous" class="btn btn-info" role="button" id="buttonlink">Travel & Explore</a>
+      <a href="http://www.hannahfong.wixsite.com/photo/events" class="btn btn-info" role="button" id="buttonlink">Events</a>
+    </div>
+    </center>
+  </div></div>
+
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4">San Leandro & Davis, CA</div>
+        <div class="col-lg-4">&copy 2017 Hannah Fong. All Rights Reserved.</div>
+        <div class="col-lg-4">
+          <a href="https://www.facebook.com/hannahfong618" target="_blank" id="link">Facebook</a>
+          <a href="https://www.linkedin.com" target="_blank" id="link">LinkedIn</a>
+          <a href="https://hannahfong.wixsite.com/photo" target="_blank" id="link">Photo</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
