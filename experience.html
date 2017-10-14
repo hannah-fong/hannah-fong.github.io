@@ -1,0 +1,207 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Euphoria+Script|Muli" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="hannah.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $(".navbar a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+
+    //email popover
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();
+    });
+
+    $(document).ready(function(){
+      var scroll_start = 0;
+      var startchange = $('#experience');
+      var offset = startchange.offset();
+      $(document).scroll(function() {
+        scroll_start = $(this).scrollTop();
+        if(scroll_start > offset.top) {
+          $('#navbartop').css('background-color', 'rgba(188, 163, 172,0.35)');
+          $('#navbartop').css('color', '#474350');
+        } else {
+            $('#navbartop').css('background-color', '#bca3ac');
+            $('#navbartop').css('color', 'white');
+            $('.navbar-fixed-top').css('box-shadow', '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);');
+          }
+       });
+    });
+  </script>
+  <title>Hannah Fong</title>
+</head>
+
+<body>
+  <nav class="navbar navbar navbar-fixed-top" id="navbartop">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6" id="navbarname">HANNAH FONG</div>
+        <div class="col-lg-6">
+          <div class="container-fluid" id="navbarlinks">
+            <ul>
+              <li><a href="hannah.html" id="navlink">HOME</a></li>
+              <li><a href="about.html" id="navlink">ABOUT</a></li>
+              <li><a href="#experience" id="navlink">EXPERIENCE</a></li>
+              <li><a href="photography.html" id="navlink">PHOTOGRAPHY</a></li>
+              <li><a href="calligraphy.html"id="navlink">CALLIGRAPHY</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="experience" class="experience"><div id="experiencetext">
+    <h1 class="pagetitle"><center><b>Experience, Projects, & Activities</b></center></h1>
+    <h4><center>Links are at the bottom of the page</center></h4>
+    <!--<h4><center>Here's what I'm involved with:</center></h4><br>-->
+    <h4 id="experiencetextitmes">
+      <div class="container-fluid">
+
+          <p><b>This website!</b><span class="right"><i>2017</i></span><br><br>HTML, CSS, JavaScript, Bootstrap</p>
+          <hr>
+          <p><b>UC Davis Fruit and Nut Research Center</b><span class="right"><i>April 2017 - Current</i></span><br>
+            <b>Video Editor Student Assistant</b><span class="right"><i>Davis, CA</i></b></span><br><br>
+            As a student assistant, I create videos for the research center's online courses.
+            I am given a powerpoint of material along with a database of photos.
+            It is my job to organize the material content and narration audio,
+            search for the appropriate photos in the database, sometimes create
+            graphics, and combine them altogether into a video using the software
+            Camtasia.  I am currently working on module videos for walnut production.</p>
+          <hr>
+          <p><b>Computer Science For Kids</b><span class="right"><i>March 2017 - Current</i><br></span><br>
+            <b>Marketing and Public Relations Chair</b><span class="right"><i>Davis, CA</i></span><br><br>
+            Computer Science for Kids, CS4K, is a group of students at UC Davis who volunteer every week at
+            various elementary schools in the Woodland/Davis area, teaching them the concepts of coding and
+            sometimes actual code syntax.<br><br>
+            As a chair member, I manage the club’s social media accounts, create and send out email newsletters,
+            market the club to students, and document each quarter of volunteering through photos and a video.</p>
+          <hr>
+          <p><b>Photography Club at UC Davis</b><span class="right"><i>February 2017 - Current</i></span><br>
+            <b>Secretary</b><span class="right"><i>Davis, CA</i></span><br><br>
+            I maintain the club Facebook page and club email, coordinate with
+            other club leaders weekly events for students to learn more about
+            photography, and reach out to other clubs for collaboration.  I also
+            keep notes during officer meetings.</p>
+          <hr>
+          <p><b>UC Davis Center for Mind and Brain</b><span class="right"><i>November 2016 - February 2017</i><br></span><br>
+            <b>Student Web Assistant</b><span class="right"><i>Davis, CA</i></span><br><br>
+            I helped code a consent form for their program using HTML, CSS, and JavaScript.</p>
+          <hr>
+          <p><b>Computer Science For Kids</b><span class="right"><i>Winter Quarter 2016</i><br></span><br>
+            <b>Volunteer Teacher</b><span class="right"><i>Davis, CA</i></span><br><br>
+            Computer Science for Kids, CS4K, is a group of students at UC Davis who volunteer every week at
+            various elementary schools in the Woodland/Davis area, teaching them the concepts of coding and
+            sometimes actual code syntax.<br><br>
+            As a volunteer, I taught the students through Scratch (by MIT), Code Combat, and self-made material.</p>
+          <hr>
+          <p><b>#include</b><span class="right"><i>February 2017 - June 2017</i></span><br>
+            <b>Marketing team member</b><span class="right"><i>Davis, CA</i></span><br><br>
+            #include is a non-profit organization that builds web applications for
+            other non-profit organizations to meet their needs free of cost.  As a
+            marketing team member, I helped with recruiting student developers to
+            organization and with internal mangement as well.</p>
+          <hr>
+          <p><b>Rachel Fong Music Website</b><span class="right"><i>2017</i></span><br><br>
+            Website made using Wordpress. I may redo her website using Wordpress
+            again or from scratch during a school break.</p>
+          <hr>
+          <p><b>Chinese Christian High School Yearbook</b><span class="right"><i>2012 - 2014</i></span><br>
+            <b>Editor-In-Chief</b><span class="right"><i>Alameda, CA</i></span><br><br>
+            Member of the yearbook team for three years and editor-in-chief for two years.<br>
+            As a member, I was a part of the layout/design team.<br>
+            As editor-in-chief, my responsibilites encompassed overseeing the production
+            of the yearbook, including brainstorming ideas, designing, photography, and fundraising.
+            I also created layout designs and themes on an online editor by Herff Jones,
+            similar to Adobe InDesign and gained experience in photography, editing,
+            organization, time management, and teamwork.</p>
+          <hr>
+      <br>
+      <center>
+      <h4><b>Links:</b></h4><br>
+      <a href="http://fruitsandnuts.ucdavis.edu" class="btn btn-info" role="button" id="whitebuttonlink" target="_blank">Fruit & Nut Research Center</a>
+      <a href="http://cs4k.org" class="btn btn-info" role="button" id="whitebuttonlink" target="_blank">CS4K</a>
+      <a href="https://www.facebook.com/groups/PhotoClubUCD/" class="btn btn-info" role="button" id="whitebuttonlink" target="_blank">Photography Club</a>
+      <!--<a href="#" class="btn btn-info" role="button" id="whitebuttonlink" target="_blank">Consent Form</a>-->
+      <a href="http://includedavis.club" class="btn btn-info" role="button" id="whitebuttonlink" target="_blank">#include</a>
+      <a href="rachelfongmusic.wordpress.com" class="btn btn-info" role="button" id="whitebuttonlink" target="_blank">Rachel Fong Music</a>
+      <a href="cchs yearbook 2014.pdf" class="btn btn-info" role="button" id="whitebuttonlink" target="_blank">CCHS Yearbooks</a>
+    </center>
+      </div>
+
+      <h1 class="pagetitle"><center><b>Skills:</b></center></h3>
+      <div id="experiencetextitmes">
+        <h4><center>
+          <b>Coding Languages and Technologies</b><br><br>C, C++, Java, Assembly,
+            Unix/Linux shell scripting<br>HTML, CSS, JavaScript, Bootstrap<br><br><br>
+          <b>Computer and Internet</b><br><br>Microsoft Office, Excel, PowerPoint, & Publisher
+            proficient<br>
+            Familiar with Microsoft Access<br>
+            Social Media (Facebook, Instagram, YouTube, Twitter, etc.), WordPress<br>
+            Google products and services<br><br><br>
+          <b>Photo and Video</b><br><br>Photography with photo & editing experience<br>
+            Adobe Photoshop & Lightroom<br>Camtasia, any video editing software<br><br><br>
+          <b>Characteristics</b><br><br>Extremely organized, detail-oriented<br>Quick learner, analytical skills<br>
+        </h4></center>
+        <center>
+          <br><br>
+        <h3><i>Extras:</i></h3>
+        <h4><b>Music</b><br><br>
+          Piano: 16 years<br>
+          Violin: 15 years<br>
+          YOSAC, orchestra: 12 years<br>
+          Heritage Baptist Church orchestra: 7 years<br>
+        </h4>
+        <br>
+        <a href="http://www.yosac.org" class="btn btn-info" role="button" id="whitebuttonlink" target="_blank">YOSAC</a>
+        <a href="http://www.hbc.org" class="btn btn-info" role="button" id="whitebuttonlink" target="_blank">Heritage Baptist Church</a>
+        </center>
+    </div></div>
+
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4">San Leandro & Davis, CA</div>
+        <div class="col-lg-4">&copy 2017 Hannah Fong. All Rights Reserved.</div>
+        <div class="col-lg-4">
+          <a href="https://www.facebook.com/hannahfong618" target="_blank" id="link">Facebook</a>
+          <a href="https://www.linkedin.com" target="_blank" id="link">LinkedIn</a>
+          <a href="https://hannahfong.wixsite.com/photo" target="_blank" id="link">Photo</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
