@@ -1,0 +1,119 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Euphoria+Script|Muli" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="hannah.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $(".navbar a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+
+    //email popover
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();
+    });
+
+    $(document).ready(function(){
+      var scroll_start = 0;
+      var startchange = $('#calligraphy');
+      var offset = startchange.offset();
+      $(document).scroll(function() {
+        scroll_start = $(this).scrollTop();
+        if(scroll_start > offset.top) {
+          $('#navbartop').css('background-color', 'rgba(188, 163, 172,0.35)');
+          $('#navbartop').css('color', '#474350');
+        } else {
+            $('#navbartop').css('background-color', '#bca3ac');
+            $('#navbartop').css('color', 'white');
+            $('.navbar-fixed-top').css('box-shadow', '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);');
+          }
+       });
+    });
+  </script>
+  <title>Hannah Fong</title>
+</head>
+
+<body>
+  <nav class="navbar navbar navbar-fixed-top" id="navbartop">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6" id="navbarname">HANNAH FONG</div>
+        <div class="col-lg-6">
+          <div class="container-fluid" id="navbarlinks">
+            <ul>
+              <li><a href="hannah.html" id="navlink">HOME</a></li>
+              <li><a href="about.html" id="navlink">ABOUT</a></li>
+              <li><a href="experience.html" id="navlink">EXPERIENCE</a></li>
+              <li><a href="photography.html" id="navlink">PHOTOGRAPHY</a></li>
+              <li><a href="#calligraphy"id="navlink">CALLIGRAPHY</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="calligraphy" class="calligraphy"><div id="calligraphytext">
+    <h1 class="pagetitle"><center><b>Calligraphy</b></h1></center>
+    <div id="calligraphytextitems">
+    <h4>I've always been a handwriting fanatic.  Growing up throughout middle school
+      and high school, I basically obsessed over having typewriter-like handwriting.
+      I stumbled upon handlettering and calligraphy almost two-and-a-half years ago
+      on Instagram and was instantly hooked.  Fast forward to today, brush calligraphy
+      is one of my most favorite and satisfying hobbies!  My favorite brush pens
+      include Tombow Fudenosuke, Zig Dual Brush, and brush pens from Daiso (they're
+      $1.50 each!).</h4></div>
+    <br>
+    <h4>Here are a few examples of my work:</h4>
+    <br><br>
+    <center><h4>Please follow me on Instagram!</h4>
+    <!--<a href="#" class="btn btn-info" role="button" id="whitebuttonlink" target="_blank">Etsy</a>-->
+    <a href="https://www.instagram.com/hannahletters" class="btn btn-info" role="button" id="whitebuttonlink" target="_blank">Instagram</a>
+    </center>
+  </div></div>
+
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4">San Leandro & Davis, CA</div>
+        <div class="col-lg-4">&copy 2017 Hannah Fong. All Rights Reserved.</div>
+        <div class="col-lg-4">
+          <a href="https://www.facebook.com/hannahfong618" target="_blank" id="link">Facebook</a>
+          <a href="https://www.linkedin.com" target="_blank" id="link">LinkedIn</a>
+          <a href="https://hannahfong.wixsite.com/photo" target="_blank" id="link">Photo</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
