@@ -21,7 +21,7 @@ nav ul {
   padding: 0;
   text-align:center;
   font-family: 'Questrial', sans-serif;
-
+  color: #474350;
 }
 
 nav li {
@@ -260,6 +260,7 @@ footer {
   font-family: 'Questrial', sans-serif;
   padding: 2%;
   background-color: #bca3ac;
+  color: #474350;
 
 }
 
