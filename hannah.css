@@ -235,6 +235,8 @@ hr {
 
 .buttons {
   margin: auto;
+  cursor: pointer;
+  transition: all .1s linear;
 }
 
 #buttonlink {
