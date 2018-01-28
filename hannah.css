@@ -202,8 +202,11 @@ hr {
 
 .carousel-inner {
   background-color: #fff;
+<<<<<<< HEAD
   width: 100%;
   max-height: 400px;
+=======
+>>>>>>> parent of ef721ac... trying auto width
 }
 
 #img {
