@@ -202,6 +202,7 @@ hr {
 
 .myCarousel {
   background-color: #fff;
+  width: auto;
 }
 
 #img {
