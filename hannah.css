@@ -209,6 +209,10 @@ hr {
   margin: auto;
 }
 
+#photobuttons {
+  margin-bottom: 10%;
+}
+
 /*-------------CALLIGRAPHY--------------*/
 
 .calligraphy {
