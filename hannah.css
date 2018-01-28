@@ -200,9 +200,10 @@ hr {
   letter-spacing: 1px;
 }
 
-.myCarousel {
+.carousel-inner {
   background-color: #fff;
-  width: auto;
+  width: 100%;
+  max-height: 400px;
 }
 
 #img {
