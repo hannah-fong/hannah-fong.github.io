@@ -238,11 +238,6 @@ hr {
   cursor: pointer;
 }
 
-.buttons:active {
-  box-shadow: 0 2px 0 #006599;
-  transform: translateY(3px);
-}
-
 #buttonlink {
   background-color: #3c7a89;
   border-color: #3c7a89;
