@@ -236,14 +236,12 @@ hr {
 .buttons {
   margin: auto;
   cursor: pointer;
-  transition: all .1s linear;
 }
 
 .buttons:active {
   box-shadow: 0 2px 0 #006599;
   transform: translateY(3px);
 }
-
 
 #buttonlink {
   background-color: #3c7a89;
