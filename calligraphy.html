@@ -9,56 +9,7 @@
   <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="hannah.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $(".navbar a").on('click', function(event) {
 
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
-
-    //email popover
-    $(document).ready(function(){
-      $('[data-toggle="popover"]').popover();
-    });
-
-    $(document).ready(function(){
-      var scroll_start = 0;
-      var startchange = $('#calligraphy');
-      var offset = startchange.offset();
-      $(document).scroll(function() {
-        scroll_start = $(this).scrollTop();
-        if(scroll_start > offset.top) {
-          $('#navbartop').css('background-color', 'rgba(188, 163, 172,0.35)');
-          $('#navbartop').css('color', '#474350');
-        } else {
-            $('#navbartop').css('background-color', '#bca3ac');
-            $('#navbartop').css('color', 'white');
-            $('.navbar-fixed-top').css('box-shadow', '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);');
-          }
-       });
-    });
-  </script>
   <title>Hannah Fong</title>
 </head>
 
@@ -119,5 +70,55 @@
     </div>
   </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $(".navbar a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+
+    //email popover
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();
+    });
+
+    $(document).ready(function(){
+      var scroll_start = 0;
+      var startchange = $('#calligraphy');
+      var offset = startchange.offset();
+      $(document).scroll(function() {
+        scroll_start = $(this).scrollTop();
+        if(scroll_start > offset.top) {
+          $('#navbartop').css('background-color', 'rgba(188, 163, 172,0.35)');
+          $('#navbartop').css('color', '#474350');
+        } else {
+            $('#navbartop').css('background-color', '#bca3ac');
+            $('#navbartop').css('color', 'white');
+            $('.navbar-fixed-top').css('box-shadow', '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);');
+          }
+       });
+    });
+  </script>
 </body>
 </html>
