@@ -172,6 +172,17 @@ hr {
   font-family: 'Muli', sans-serif;
 }
 
+.hometext a {
+  color: #2a283a;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.hometext a:hover {
+  color: #2b5e6b;
+	text-shadow: -1px 1px 8px #fff, 1px -1px 8px #fff
+}
+
 #titletext {
   font-size: 12vh;
   font-family: 'Century Gothic', sans-serif;
