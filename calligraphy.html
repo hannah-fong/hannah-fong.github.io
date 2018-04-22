@@ -14,6 +14,17 @@
 </head>
 
 <body>
+  <div class="topnav" id="navbartop">
+    <a href="index.html" id="navbarname">HANNAH FONG</a>
+    <div class="topnav-right">
+      <a href="about.html">ABOUT</a>
+      <a href="experience.html">EXPERIENCE</a>
+      <a href="photography.html">PHOTOGRAPHY</a>
+      <a href="calligraphy.html">CALLIGRAPHY</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  </div>
+  <!--
   <nav class="navbar navbar navbar-fixed-top" id="navbartop">
     <div class="container-fluid">
       <div class="row">
@@ -31,7 +42,7 @@
         </div>
       </div>
     </div>
-  </nav>
+  </nav>-->
 
   <div id="calligraphy" class="calligraphy"><div id="calligraphytext">
     <h1 class="pagetitle"><center><b>Calligraphy</b></h1></center>
@@ -119,6 +130,15 @@
           }
        });
     });
+
+    function myFunction() {
+        var x = document.getElementById("navbartop");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
   </script>
 </body>
 </html>
