@@ -62,7 +62,7 @@ body.fade-out {
   float: right;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .topnav-right a {display: none;}
   .topnav a.icon {
     float: right;
@@ -71,7 +71,7 @@ body.fade-out {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -223,9 +223,13 @@ hr {
 .picofme {
   display: inline-block;
   width:400px;
-  margin-right: 5px;
-
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 900px){
+  .picofme {
+    max-width: 100%;
+  }
 }
 
 .right {
