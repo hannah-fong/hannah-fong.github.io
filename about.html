@@ -17,7 +17,7 @@
   <div class="topnav navbar-fixed-top" id="navbartop">
     <a href="index.html" id="navbarname">HANNAH FONG</a>
     <div class="topnav-right">
-      <a href="about.html">ABOUT</a>
+      <a href="#about">ABOUT</a>
       <a href="experience.html">EXPERIENCE</a>
       <a href="photography.html">PHOTOGRAPHY</a>
       <a href="calligraphy.html">CALLIGRAPHY</a>
@@ -54,7 +54,7 @@
             <div class="picmeblock">
               <!--<img src="IMG_7544.square.small.jpg" alt="picture of me" class="picofme">-->
               <center>
-              <h1 class="pagetitle"><b>About</b></h1><br>
+              <h1 class="pagetitle"><br><b>About</b></h1><br>
               <img src="IMG_8056.jpg" alt="picture of me" class="picofme">
 
               <!--<img src="IMG_9597...jpg" alt="picture of me" class="picofme"></div>-->
@@ -115,7 +115,7 @@
   <script>
     $(document).ready(function(){
       // Add smooth scrolling to all links
-      $(".navbar a").on('click', function(event) {
+      $(".topnav a").on('click', function(event) {
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
@@ -162,10 +162,10 @@
 
     function myFunction() {
         var x = document.getElementById("navbartop");
-        if (x.className === "topnav") {
+        if (x.className === "topnav navbar-fixed-top") {
             x.className += " responsive";
         } else {
-            x.className = "topnav";
+            x.className = "topnav navbar-fixed-top";
         }
     }
   </script>

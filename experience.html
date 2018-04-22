@@ -18,7 +18,7 @@
     <a href="index.html" id="navbarname">HANNAH FONG</a>
     <div class="topnav-right">
       <a href="about.html">ABOUT</a>
-      <a href="experience.html">EXPERIENCE</a>
+      <a href="#experience">EXPERIENCE</a>
       <a href="photography.html">PHOTOGRAPHY</a>
       <a href="calligraphy.html">CALLIGRAPHY</a>
       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
@@ -45,7 +45,7 @@
   </nav>
   -->
   <div id="experience" class="experience"><div id="experiencetext">
-    <h1 class="pagetitle"><center><b>Experience, Projects, & Activities</b></center></h1>
+    <h1 class="pagetitle"><br><center><b>Experience, Projects, & Activities</b></center></h1>
     <!--<h4><center>Links are at the bottom of the page</center></h4>-->
     <!--<h4><center>Here's what I'm involved with:</center></h4><br>-->
     <h4 id="experiencetextitmes">
@@ -175,13 +175,13 @@
       </div>
     </div>
   </footer>
-
+  <!-- script -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
     $(document).ready(function(){
       // Add smooth scrolling to all links
-      $(".navbar a").on('click', function(event) {
+      $(".topnav a").on('click', function(event) {
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
@@ -218,20 +218,22 @@
         if(scroll_start > offset.top) {
           $('#navbartop').css('background-color', 'rgba(188, 163, 172,0.35)');
           $('#navbartop').css('color', '#474350');
-        } else {
+        }
+        else {
             $('#navbartop').css('background-color', '#bca3ac');
             $('#navbartop').css('color', 'white');
             $('.navbar-fixed-top').css('box-shadow', '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);');
-          }
-       });
+        }
+        }
+      );
     });
 
     function myFunction() {
         var x = document.getElementById("navbartop");
-        if (x.className === "topnav") {
+        if (x.className === "topnav navbar-fixed-top") {
             x.className += " responsive";
         } else {
-            x.className = "topnav";
+            x.className = "topnav navbar-fixed-top";
         }
     }
   </script>

@@ -19,7 +19,7 @@
     <div class="topnav-right">
       <a href="about.html">ABOUT</a>
       <a href="experience.html">EXPERIENCE</a>
-      <a href="photography.html">PHOTOGRAPHY</a>
+      <a href="#photography">PHOTOGRAPHY</a>
       <a href="calligraphy.html">CALLIGRAPHY</a>
       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
@@ -45,7 +45,7 @@
   </nav>-->
 
   <div id="photography" class="photography"><div id="photographytext">
-    <h1 class="pagetitle"><center><b>Photography</b></center></h1>
+    <h1 class="pagetitle"><center><br><b>Photography</b></center></h1>
     <br><br>
     <!--<h4>From a young age, I loved taking pictures at any given moment.  I loved
       how I could capture a moment in time, then look back at that moment
@@ -169,7 +169,7 @@
   <script>
     $(document).ready(function(){
       // Add smooth scrolling to all links
-      $(".navbar a").on('click', function(event) {
+      $(".topnav a").on('click', function(event) {
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
@@ -216,10 +216,10 @@
 
     function myFunction() {
         var x = document.getElementById("navbartop");
-        if (x.className === "topnav") {
+        if (x.className === "topnav navbar-fixed-top") {
             x.className += " responsive";
         } else {
-            x.className = "topnav";
+            x.className = "topnav navbar-fixed-top";
         }
     }
   </script>
