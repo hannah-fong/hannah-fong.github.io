@@ -1,171 +1,80 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>hannah fong</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Euphoria+Script|Muli" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="hannah.css">
-
-  <title>Hannah Fong</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Muli|PT+Serif" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
-
 <body>
-  <div class="topnav navbar-fixed-top" id="navbartop">
-    <a href="index.html" id="navbarname">HANNAH FONG</a>
-    <div class="topnav-right">
-      <a href="#about">ABOUT</a>
-      <a href="experience.html">EXPERIENCE</a>
-      <a href="photography.html">PHOTOGRAPHY</a>
-      <a href="calligraphy.html">CALLIGRAPHY</a>
-      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-  </div>
-  <!--
-  <nav class="navbar navbar navbar-fixed-top" id="navbartop">
+
+  <nav class="navbar fixed-top" id="navbar">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-6" id="navbarname">HANNAH FONG</div>
-        <div class="col-lg-6">
-          <div class="container-fluid" id="navbarlinks">
-            <ul>
-              <li><a href="index.html" id="navlink">HOME</a></li>
-              <li id="navlink2"><a href="#about" id="navlink">ABOUT</a></li>
-              <li id="navlink3"><a href="experience.html" id="navlink">EXPERIENCE</a></li>
-              <li><a href="photography.html" id="navlink">PHOTOGRAPHY</a></li>
-              <li><a href="calligraphy.html"id="navlink">CALLIGRAPHY</a></li>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" id="title">hannah fong</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right" id="navbar-right">
+          <li><a href="about.html">about</a></li>
+          <li><a href="portfolio.html">portfolio</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">art <span class="caret"></span></a>
+            <ul class="dropdown-menu" id="navbar-right">
+              <li><a href="photography.html">photography</a></li>
+              <li><a href="calligraphy.html">calligraphy</a></li>
             </ul>
-          </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="about">
+    <h2>about</h2>
+    <div class="container-fluid" id="abouttext">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="me.jpg">
+        </div>
+        <div class="col-sm-6" id="aboutboxright">
+          <p>Hi, I'm Hannah!</p>
+          <p>I am looking for opportunities in website design, but also open to other opportunities.</p>
+          <p>I recently graduated from UC Davis with a degree in Computer Science and minors in Economics and Music.</p>
+          <p>My experiences include: <b>Website Manager and Writer</b> for the UC Davis Dept. of Electrical and Computer Engineering,
+            Private <b>High School Math Tutor</b>, and <b>Video Editor</b> for the UC Davis Fruit and Nut Research Center.</p>
+            <p>Skills: Coding (HTML, CSS, JavaScript, C, C++, SQL), WordPress, Wireframing, Technical Writing, Adobe
+              Photoshop and Lightroom, Video Editing, Microsoft Office Suite, Attention to Detail, Analytical</p>
+          <p>Contact: hannahfong618@gmail.com</p>
+          <p>Link to <a href="https://drive.google.com/file/d/1XJkJHybPN6-XZ1UthSKbBoJV_s7CGFyT/view?usp=sharing"
+            target="_blank" style="text-decoration:underline;">Resume</a></p>
         </div>
       </div>
     </div>
-  </nav>-->
-
-
-  <div id="about" class="about">
-    <div id="abouttext">
-
-      <div class="container-fluid">
-        <!--<div class="row"><center>
-          <div class="col-lg-12">-->
-            <div class="picmeblock">
-              <!--<img src="IMG_7544.square.small.jpg" alt="picture of me" class="picofme">-->
-              <center>
-              <h1 class="pagetitle"><br><b>About</b></h1><br>
-              <img src="IMG_8491.jpg" alt="picture of me" class="picofme">
-
-              <!--<img src="IMG_9597...jpg" alt="picture of me" class="picofme"></div>-->
-              <h3>
-                <br><p>B.S. Computer Science<br>
-                    Minor: Economics & Music, Expected 2018<br>
-                    University of California, Davis
-                </p>
-              </h3>
-            </center>
-            </div>
-        <!--</div><center>-->
-
-      <hr>
-
-      <h4>Hello!  I am recent graduate from the University of California, Davis with
-        a major in Computer Science and minors in Economics and Music.
-        I grew up with a strong academic background and a love for the arts.  In
-        college, I learned how to code and appreciate product development and the power of data.</h4>
-
-      <h4>In my free time, you can find me taking pictures with my camera, practicing my
-        calligraphy, playing on my piano and violin, and spending time
-        with family and friends.</h4>
-
-      <h4>If you'd like to chat with or contact me, please send me an email provided below.</h4>
-      <hr>
-    </div>
-
-    <div id="aboutbuttons">
-      <center>
-      <a class="btn btn-info" role="button" id="buttonlink" data-toggle="popover"
-        data-content="hannahfong618@gmail.com" data-placement="top">Email</a>
-      <!--<a href="https://drive.google.com/file/d/0Bzg7LCMYVAEFSVNScDY1X2Y3cnc/view?usp=sharing"
-        class="btn btn-info" role="button" id="buttonlink" target="_blank">Resume</a>-->
-      <a href="resume Hannah Fong ucd 2017.pdf" class="btn btn-info" role="button" id="buttonlink" target="_blank">Resume</a>
-      <!--<a href="https://www.linkedin.com" class="btn btn-info" role="button" id="buttonlink" target="_blank">LinkedIn</a>-->
-    </div>
-    </center>
   </div>
 
   <footer>
-    <div class="container-fluid">
+    <div class="container-fluid" id="footer">
       <div class="row">
-        <div class="col-lg-4">San Leandro & Davis, CA</div>
+        <div class="col-lg-4">San Leandro, CA</div>
         <div class="col-lg-4">&#9400; 2018 Hannah Fong. All Rights Reserved.</div>
         <div class="col-lg-4">
-          <a href="https://www.facebook.com/hannahfong618" target="_blank" id="link">Facebook</a>
-          <a href="https://www.linkedin.com/in/hannah-fong" target="_blank" id="link">LinkedIn</a>
-          <a href="https://hannahfong.wixsite.com/photo" target="_blank" id="link">Photo</a>
+          <a href="https://www.facebook.com/hannahfong618" id="link" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.linkedin.com/in/hannah-fong" id="link" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://hannahfong.wixsite.com/photo" id="link" target="_blank"><i class="fas fa-camera"></i></a>
         </div>
       </div>
     </div>
   </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $(".topnav a").on('click', function(event) {
 
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
-
-    //email popover
-    $(document).ready(function(){
-      $('[data-toggle="popover"]').popover();
-    });
-
-    $(document).ready(function(){
-      var scroll_start = 0;
-      var startchange = $('#about');
-      var offset = startchange.offset();
-      $(document).scroll(function() {
-        scroll_start = $(this).scrollTop();
-        if(scroll_start > offset.top) {
-          $('#navbartop').css('background-color', 'rgba(188, 163, 172,0.35)');
-          $('#navbartop').css('color', '#474350');
-        } else {
-            $('#navbartop').css('background-color', '#bca3ac');
-            $('#navbartop').css('color', 'white');
-            $('#navbartop').css('box-shadow', '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);');
-          }
-       });
-    });
-
-    function myFunction() {
-        var x = document.getElementById("navbartop");
-        if (x.className === "topnav navbar-fixed-top") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav navbar-fixed-top";
-        }
-    }
-  </script>
-</body>
-</html>
+  </body>
+  </html>

@@ -1,38 +1,66 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>hannah fong</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Muli|PT+Serif" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Euphoria+Script|Muli" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="hannah.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-  <title>Hannah Fong</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
 
-  <p id="startchange"></p>
-
-  <div id="home" class="hometext">
-    <div id="hometext">
-      <!--<h3 class="home" id="subtitletext">Hi there, I'm</h3>-->
-      <h1 class="home" id="titletext"><a href="about.html">HANNAH FONG<a></h1>
-      <p>New design coming soon!</p>
-      <!--<h3 class="home" id="subtitletext"><i>Student, Developer, Artist</i></h3>-->
-      <!--<br>
-      <div class="buttons">
-        <a href="about.html" class="btn btn-info" role="button" id="buttonlink">Enter Here</a>
-      </div>-->
-      <!--<br>
-      <h3 class="home" id="subtitletext">Please note: This website is still under
-        construction, but it is still functional.  Thank you for visiting!</h3>-->
+<nav class="navbar fixed-top" id="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html" id="title">hannah fong</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right" id="navbar-right">
+        <li><a href="about.html">about</a></li>
+        <li><a href="portfolio.html">portfolio</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">art <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="navbar-right">
+            <li><a href="photography.html">photography</a></li>
+            <li><a href="calligraphy.html">calligraphy</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </div>
+</nav>
 
+<div class="homeimage">
+  <div class="hometext">
+    <div class="hometextborder">
+      <h4 id="hometext1">hello my name is</h4>
+      <h1 id="hometext2">hannah</h1>
+    </div>
+  </div>
+</div>
 
+<footer>
+  <div class="container-fluid" id="footer">
+    <div class="row">
+      <div class="col-lg-4">San Leandro, CA</div>
+      <div class="col-lg-4">&#9400; 2018 Hannah Fong. All Rights Reserved.</div>
+      <div class="col-lg-4">
+        <a href="https://www.facebook.com/hannahfong618" id="link" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.linkedin.com/in/hannah-fong" id="link" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://hannahfong.wixsite.com/photo" id="link" target="_blank"><i class="fas fa-camera"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>

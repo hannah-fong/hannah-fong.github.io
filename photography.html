@@ -1,227 +1,149 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>hannah fong</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Euphoria+Script|Muli" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="hannah.css">
-
-  <title>Hannah Fong</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Muli|PT+Serif" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
-
 <body>
-  <div class="topnav navbar-fixed-top" id="navbartop">
-    <a href="index.html" id="navbarname">HANNAH FONG</a>
-    <div class="topnav-right">
-      <a href="about.html">ABOUT</a>
-      <a href="experience.html">EXPERIENCE</a>
-      <a href="#photography">PHOTOGRAPHY</a>
-      <a href="calligraphy.html">CALLIGRAPHY</a>
-      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-  </div>
-  <!--
-  <nav class="navbar navbar navbar-fixed-top" id="navbartop">
+
+  <nav class="navbar fixed-top" id="navbar">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-6" id="navbarname">HANNAH FONG</div>
-        <div class="col-lg-6">
-          <div class="container-fluid" id="navbarlinks">
-            <ul>
-              <li><a href="index.html" id="navlink">HOME</a></li>
-              <li><a href="about.html" id="navlink">ABOUT</a></li>
-              <li><a href="experience.html" id="navlink">EXPERIENCE</a></li>
-              <li><a href="#photography" id="navlink">PHOTOGRAPHY</a></li>
-              <li><a href="calligraphy.html"id="navlink">CALLIGRAPHY</a></li>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" id="title">hannah fong</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right" id="navbar-right">
+          <li><a href="about.html">about</a></li>
+          <li><a href="portfolio.html">portfolio</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">art <span class="caret"></span></a>
+            <ul class="dropdown-menu" id="navbar-right">
+              <li><a href="photography.html">photography</a></li>
+              <li><a href="calligraphy.html">calligraphy</a></li>
             </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="photography">
+    <h2>photography</h2>
+    <br>
+    <p><a href="https://hannahfong.wixsite.com/photo" id="link" target="_blank">photography website</a><p>
+    <div class="container" id="photocontainer">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+          <li data-target="#myCarousel" data-slide-to="6"></li>
+          <li data-target="#myCarousel" data-slide-to="7"></li>
+          <li data-target="#myCarousel" data-slide-to="8"></li>
+          <li data-target="#myCarousel" data-slide-to="9"></li>
+          <li data-target="#myCarousel" data-slide-to="10"></li>
+          <li data-target="#myCarousel" data-slide-to="11"></li>
+          <li data-target="#myCarousel" data-slide-to="12"></li>
+          <li data-target="#myCarousel" data-slide-to="13"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="images_photog\IMG_7117.jpg" alt="IMG1" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="images_photog\IMG_1520.jpg" alt="IMG2" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="images_photog\IMG_7299.jpg" alt="IMG3" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="images_photog\IMG_9556.jpg" alt="IMG4" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="images_photog\IMG_8578.jpg" alt="IMG5" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="images_photog\IMG_7042.jpg" alt="IMG6" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="images_photog\IMG_9279.jpg" alt="IMG7" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="images_photog\IMG_8059.jpg" alt="IMG8" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="images_photog\IMG_8261.jpg" alt="IMG9" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="images_photog\IMG_8680.jpg" alt="IMG10" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="images_photog\IMG_8749.jpg" alt="IMG11" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="images_photog\IMG_9212.jpg" alt="IMG12" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="images_photog\IMG_1825.jpg" alt="IMG13" style="width:100%;">
           </div>
         </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
-  </nav>-->
-
-  <div id="photography" class="photography"><div id="photographytext">
-    <h1 class="pagetitle"><center><br><b>Photography</b></center></h1>
-    <br><br>
-    <!--<h4>From a young age, I loved taking pictures at any given moment.  I loved
-      how I could capture a moment in time, then look back at that moment
-      as many times as I would like.  The first camera I ever bought was a sea green
-      Nikon Coolpix point-and-shoot camera back in 2007.  I received my DSLR in
-      high school and I've been excited to use it every possible chance since.
-      More recently, my focus is outdoor portraits, but I still love to shoot
-      nature and street life.</h4>-->
-      <h4><center>Please enjoy a few of my photographs, and check out my
-        <a href="https://hannahfong.wixsite.com/photo" target="_blank" id="linklink">photography website</a>!</center>
-      </h4>
-    </div>
-    <br><br>
-<!---------------------------------------------->
-  <div class="container">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-        <li data-target="#myCarousel" data-slide-to="5"></li>
-        <li data-target="#myCarousel" data-slide-to="6"></li>
-        <li data-target="#myCarousel" data-slide-to="7"></li>
-        <li data-target="#myCarousel" data-slide-to="8"></li>
-        <li data-target="#myCarousel" data-slide-to="9"></li>
-        <li data-target="#myCarousel" data-slide-to="10"></li>
-        <li data-target="#myCarousel" data-slide-to="11"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="images_photog\IMG_7117.jpg" alt="IMG1" style="width:100%;">
-        </div>
-
-        <div class="item">
-          <img src="images_photog\IMG_7004.jpg" alt="IMG2" style="width:100%;">
-        </div>
-
-        <div class="item">
-          <img src="images_photog\IMG_7299.jpg" alt="IMG3" style="width:100%;">
-        </div>
-
-        <div class="item">
-          <img src="images_photog\IMG_0838.jpg" alt="IMG4" style="width:100%;">
-        </div>
-
-        <div class="item">
-          <img src="images_photog\IMG_0896.jpg" alt="IMG5" style="width:100%;">
-        </div>
-
-        <div class="item">
-          <img src="images_photog\IMG_7042.jpg" alt="IMG6" style="width:100%;">
-        </div>
-
-        <div class="item">
-          <img src="images_photog\IMG_9279.jpg" alt="IMG7" style="width:100%;">
-        </div>
-
-        <div class="item">
-          <img src="images_photog\IMG_8059.jpg" alt="IMG8" style="width:100%;">
-        </div>
-
-        <div class="item">
-          <img src="images_photog\IMG_8261.jpg" alt="IMG9" style="width:100%;">
-        </div>
-
-        <div class="item">
-          <img src="images_photog\IMG_8680.jpg" alt="IMG10" style="width:100%;">
-        </div>
-
-        <div class="item">
-          <img src="images_photog\IMG_8749.jpg" alt="IMG11" style="width:100%;">
-        </div>
-      </div>
-
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
   </div>
-<!------------------------------------->
-  <br><br><br><br>
-  <!--<center>
-  <h4>Please click on the links below to see more!</h4>
-  <div class="buttons" id="photobuttons">
-    <a href="http://www.hannahfong.wixsite.com/photo/portraits" class="btn btn-info" role="button" target="_blank" id="buttonlink">Portraits</a>
-    <a href="http://www.hannahfong.wixsite.com/photo/graduation-photos" class="btn btn-info" role="button" target="_blank" id="buttonlink">Graduation</a>
-    <a href="http://www.hannahfong.wixsite.com/photo/nature-landscapes" class="btn btn-info" role="button" target="_blank" id="buttonlink">Landscapes/Nature</a>
-    <a href="http://www.hannahfong.wixsite.com/photo/miscellaneous" class="btn btn-info" role="button" target="_blank" id="buttonlink">Travel & Explore</a>
-    <a href="http://www.hannahfong.wixsite.com/photo/events" class="btn btn-info" role="button" target="_blank" id="buttonlink">Events</a>
-  </div>
-  </center>
-  </div></div>
-  -->
+
   <footer>
-    <div class="container-fluid">
+    <div class="container-fluid" id="footer">
       <div class="row">
-        <div class="col-lg-4">San Leandro & Davis, CA</div>
+        <div class="col-lg-4">San Leandro, CA</div>
         <div class="col-lg-4">&#9400; 2018 Hannah Fong. All Rights Reserved.</div>
         <div class="col-lg-4">
-          <a href="https://www.facebook.com/hannahfong618" target="_blank" id="link">Facebook</a>
-          <a href="https://www.linkedin.com/in/hannah-fong" target="_blank" id="link">LinkedIn</a>
-          <a href="https://hannahfong.wixsite.com/photo" target="_blank" id="link">Photo</a>
+          <a href="https://www.facebook.com/hannahfong618" id="link" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.linkedin.com/in/hannah-fong" id="link" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://hannahfong.wixsite.com/photo" id="link" target="_blank"><i class="fas fa-camera"></i></a>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $(".topnav a").on('click', function(event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
-
-    //email popover
-    $(document).ready(function(){
-      $('[data-toggle="popover"]').popover();
-    });
-
-    $(document).ready(function(){
-      var scroll_start = 0;
-      var startchange = $('#photography');
-      var offset = startchange.offset();
-      $(document).scroll(function() {
-        scroll_start = $(this).scrollTop();
-        if(scroll_start > offset.top) {
-          $('#navbartop').css('background-color', 'rgba(188, 163, 172,0.35)');
-          $('#navbartop').css('color', '#474350');
-        } else {
-            $('#navbartop').css('background-color', '#bca3ac');
-            $('#navbartop').css('color', 'white');
-            $('.navbar-fixed-top').css('box-shadow', '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);');
-          }
-       });
-    });
-
-    function myFunction() {
-        var x = document.getElementById("navbartop");
-        if (x.className === "topnav navbar-fixed-top") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav navbar-fixed-top";
-        }
-    }
-  </script>
-</body>
-</html>
+  </body>
+  </html>
